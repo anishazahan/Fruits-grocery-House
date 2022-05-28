@@ -3,9 +3,9 @@ import './Service.css'
 
 const Service = () => {
   return (
-    <div className='container text-center'>
-        <h3 className=' fw-bolder'>Why Our Customers Partner With Us:</h3>
-        <h5 className='fw-bold text-success'>services</h5>
+    <div className='container text-center mb-5'>
+        <h3 className=' fw-bolder '>Why Our Customers Partner With Us:</h3>
+        <h5 className='fw-bold text-success services'>services</h5>
         <div className="row">
             <div className="col-md-2 col-lg-4 mt-5">
                 <img src="https://augustafruit.com/wp-content/uploads/2015/09/1000-x-667-Citrus-300x200.jpg" alt="" />

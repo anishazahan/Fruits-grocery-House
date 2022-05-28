@@ -2,4 +2,10 @@
     color: #064207;
     font-size: 20px;
     font-weight: bold;
+   
+}
+.services{
+    border-bottom: 3px solid #13ce16;
+    display: inline;
+    padding: 5px 20px;
 }

@@ -49,7 +49,7 @@ const Login = () => {
   return (
     
     <div className="background mx-auto w-50 px-5 py-5 my-5">
-    <h3 className="mb-4 text-info fw-bold fs-2 my-5">
+    <h3 className="mb-4 fw-bold fs-2 my-5 login">
       Please Login Here
     </h3>
     <form onSubmit={handleSubmit(onSubmit)}>
@@ -86,7 +86,7 @@ const Login = () => {
      
         <input
           type="password"
-          className="form form-control py-2 pl-3 "
+          className="form form-control py-2 pl-3 mt-3 "
           placeholder="Your Password"
           {...register("password", {
             required: {
@@ -114,7 +114,7 @@ const Login = () => {
         </div>
      
             {signInError}
-     <input type="submit" value="Login" className="btn btn-info fw-bold px-4 py-2 mb-5" />
+     <input type="submit" value="Login" className="btn btn-info fw-bold px-4 py-2 mt-3 mb-5" />
     </form>
             <small className='text-white'>New to Fruit WareHose ?<Link className="text-info" to="/SignUp">Register Now!</Link> </small>
 

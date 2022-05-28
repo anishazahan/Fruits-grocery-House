@@ -1,6 +1,12 @@
 .background{
     border-radius: 5px;
-background: #046f2d;
-box-shadow:  -5px -5px 0px #1f1e1e,
-             -5px -5px 0px #1f1e1e;
+background: #064207;
+box-shadow:  -5px -5px 0px #F0D290,
+             -5px -5px 0px #F0D290;
+}
+.login{
+    color: #F0D290;
+}
+.button-login{
+    
 }
