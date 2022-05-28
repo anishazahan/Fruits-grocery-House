@@ -1,6 +1,7 @@
 
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Blog from './Components/Blog/Blog';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
 import RequireAuth from './Components/Login/RequireAuth';
@@ -16,6 +17,7 @@ function App() {
      <Navbar></Navbar>
      <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="/product" element={<Product/>} />
         <Route path="/uploadproduct" element={<RequireAuth><UploadProduct/></RequireAuth>} />
         <Route path="/login" element={<Login/>} />

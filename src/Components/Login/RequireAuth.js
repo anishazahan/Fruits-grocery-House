@@ -8,7 +8,9 @@ const RequireAuth = ({ children }) => {
     const location = useLocation();
   
       if(loading){
-        return <button className="spinner-border mt-5 mx-auto">Loading..</button>
+        return  <div className=" container mx-auto mt-5">
+                <div className="spinner-border"></div>
+        </div>
       }
     if (!user) {
       return <Navigate to="/login" state={{ from: location }} replace/>

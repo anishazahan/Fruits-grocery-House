@@ -1,0 +1,39 @@
+.products-heading{
+    color: #064207;
+    font-weight: bold;
+    padding: 5px 15px;
+    
+}
+.images{
+    width: 354px;
+    height: 236px;
+   
+   
+}
+.max-width{
+    max-width: 1240px;
+}
+.heading{
+    color: #064207;
+    font-weight: bold;
+}
+.updateBtn{
+    background: #064207;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+
+}
+.updateBtn:hover{
+    color: aqua;
+    background: #064207df;
+}
+.price{
+    color: #064207;
+    font-weight: 700;
+    font-size: 25px;
+   
+}

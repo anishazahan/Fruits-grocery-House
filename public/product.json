@@ -1,0 +1,83 @@
+[
+    {
+        "id": "1",
+        "category": "Fresh",
+        "name": "BlueBerry",
+        "supplier": "Fresh Fruit Company.",
+        "price": 420,
+        "unit":"Per Pack",
+        "description":"Just like their close relative, the peach, nectarines are a truly delectable, juicy fruit. And with smooth, fuzz-free skins, nectarines are particularly wonderful in fruit salads, crisps, crumbles and cakes. Or simply enjoy eating them out of hand for sweet, sunshiny delight.",
+        "quantityLevel":"pack",
+        "img": "https://cdn.pixabay.com/photo/2016/04/13/07/18/blueberries-1326154_960_720.jpg",
+       
+        "quantity": 1500,
+        "QuantityUnit":"pack"
+      },
+    {
+        "id": "2",
+        "category": "Fresh Fruits",
+        "name": "Straw Berry",
+        "supplier": "Fresh Fruit Company.",
+        "price": 1000,
+        "unit":"Per Pack",
+        "description":"Just like their close relative, the peach, nectarines are a truly delectable, juicy fruit. And with smooth, fuzz-free skins, nectarines are particularly wonderful in fruit salads, crisps, crumbles and cakes. Or simply enjoy eating them out of hand for sweet, sunshiny delight.",
+        "quantityLevel":"pack",
+        "img": "https://cdn.pixabay.com/photo/2016/04/24/19/41/strawberries-1350482__340.jpg",
+        "quantity": 50,
+        "QuantityUnit":"pack"
+      },
+       
+    {
+        "id": "3",
+        "category": "Fresh Fruits",
+        "name": "Avacado",
+        "supplier": "Healthy Fruit Company.",
+        "price": 1200,
+        "unit":"Per Pack",
+        "description":"Just like their close relative, the peach, nectarines are a truly delectable, juicy fruit. And with smooth, fuzz-free skins, nectarines are particularly wonderful in fruit salads, crisps, crumbles and cakes. Or simply enjoy eating them out of hand for sweet, sunshiny delight.",
+        "quantityLevel":"pack",
+        "img": "https://cdn.pixabay.com/photo/2015/08/10/12/02/avocados-882635_960_720.jpg",
+        "quantity": 150,
+        "QuantityUnit":"pack"
+      },
+    {
+        "id": "4",
+        "category": "Fresh Fruits",
+        "name": "Banana",
+        "supplier": "Healthy Fruit Company.",
+        "price": 50,
+        "unit":"Per unit",
+        "description":"Just like their close relative, the peach, nectarines are a truly delectable, juicy fruit. And with smooth, fuzz-free skins, nectarines are particularly wonderful in fruit salads, crisps, crumbles and cakes. Or simply enjoy eating them out of hand for sweet, sunshiny delight.",
+       
+        "img": "https://cdn.pixabay.com/photo/2015/03/30/12/43/bananas-698608_960_720.jpg",
+        "quantity": 2500,
+        "QuantityUnit":"unit"
+      },
+    {
+        "id": "5",
+        "category": "Fresh Fruits",
+        "name": "Apple",
+        "supplier": "Fresh Fruit Company.",
+        "price": 300,
+        "unit":"Per pack",
+        "description":"Just like their close relative, the peach, nectarines are a truly delectable, juicy fruit. And with smooth, fuzz-free skins, nectarines are particularly wonderful in fruit salads, crisps, crumbles and cakes. Or simply enjoy eating them out of hand for sweet, sunshiny delight.",
+       
+        "img": "https://cdn.pixabay.com/photo/2015/06/10/19/56/apples-805124_960_720.jpg",
+        "quantity": 1000,
+        "QuantityUnit":"Pack"
+      },
+    {
+        "id": "6",
+        "category": "Fresh Fruits",
+        "name": "Cherry",
+        "supplier": "Healthy Fruit Company.",
+        "price": 500,
+        "unit":"Per pack",
+        "description":"Just like their close relative, the peach, nectarines are a truly delectable, juicy fruit. And with smooth, fuzz-free skins, nectarines are particularly wonderful in fruit salads, crisps, crumbles and cakes. Or simply enjoy eating them out of hand for sweet, sunshiny delight.",
+       
+        "img": "https://cdn.pixabay.com/photo/2018/07/07/15/53/cherries-3522365_960_720.jpg",
+        "quantity": 1500,
+        "QuantityUnit":"Pack"
+      }
+       
+]

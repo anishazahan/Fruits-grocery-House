@@ -36,7 +36,9 @@ const SignUP = () => {
 
   if (loading || googleloading || updating) {
     return (
-      <button className="spinner-border mt-16 font-medium">Loading</button>
+      <div className="spinner-border container mx-auto mt-5">
+      
+    </div>
     );
   }
 
@@ -134,7 +136,7 @@ const SignUP = () => {
           <input
             type="submit"
             value="Resister"
-            className="btn text-white bg-dark fw-bold px-2 mb-4"
+            className=" btn btn-info text-dark  fw-bold px-2 mb-4"
           />
         </form>
         <small>

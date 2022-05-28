@@ -1,0 +1,12 @@
+.blog-Background{
+    background: url("https://cdn.pixabay.com/photo/2017/09/26/13/31/apple-2788616__340.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 60vh;
+}
+.blog-heading{
+    color: bisque;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 100px;
+}
