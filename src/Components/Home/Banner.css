@@ -1,0 +1,28 @@
+.banner-background{
+    width: 100%;
+    min-height: 110vh;
+    background-image: linear-gradient( to right,rgba(0,0,0,0.1) 40%,rgba(0,0,0,0.1)) ,url("https://cdn.pixabay.com/photo/2017/05/07/19/32/strawberry-2293337_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 7%;
+}
+.banner-header{
+    color: #F0D290;
+    font-size: 60px;
+    font-weight: bold;
+}
+.banner-content{
+    padding-top: 13%;
+}
+.banner-btn{
+    color: #F0D290;
+    background: #064207;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+
+
