@@ -9,3 +9,19 @@
     display: inline;
     padding: 5px 20px;
 }
+.back{
+    background-image: linear-gradient( to right,rgba(0,0,0,0.1) 40%,rgba(0,0,0,0.1)) ,url("https://cdn.pixabay.com/photo/2018/07/20/14/02/grapes-3550733_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    
+    scroll-behavior: smooth;
+    border-radius: 5px;
+    margin: 7% 0;
+}
+.fresh{
+    margin: auto;
+    padding-top: 200px;
+    color: #064207;
+    font-weight: bold;
+}

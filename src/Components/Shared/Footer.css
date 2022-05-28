@@ -1,0 +1,13 @@
+.footer-background{
+    background: #064207;
+    color: antiquewhite;
+}
+.text-color{
+    color: bisque;
+}
+.footer-link{
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 6px;
+}

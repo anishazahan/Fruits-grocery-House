@@ -23,6 +23,9 @@ const Service = () => {
                 <p>Our business is produce and freshness is key. Joe frequents the Ontario Food and we import specialty items to ensure our customers get the best products available.</p>
             </div>
         </div>
+        <div className="container back">
+           <h4 className='fresh'>Fresh Fruits Here!!</h4>
+        </div>
     </div>
   )
 }

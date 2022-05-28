@@ -7,6 +7,7 @@ import Login from './Components/Login/Login';
 import RequireAuth from './Components/Login/RequireAuth';
 import SignUP from './Components/Login/SignUP';
 import Product from './Components/Product/Product';
+import Footer from './Components/Shared/Footer';
 import Navbar from './Components/Shared/Navbar';
 import UploadProduct from './Components/UploadProduct/UploadProduct';
 
@@ -23,6 +24,7 @@ function App() {
         <Route path="/login" element={<Login/>} />
         <Route path="/signUp" element={<SignUP/>} />
      </Routes>
+     <Footer></Footer>
      
       
     </div>

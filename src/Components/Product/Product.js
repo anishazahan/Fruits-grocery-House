@@ -12,7 +12,7 @@ const Product = () => {
 }, [])
 
   return (
-    <div id="products" className='container mx-auto'>
+    <div id="products" className='container mx-auto mb-5'>
        <h4 className='products-heading text-center mt-5 mx-auto'> Our Products</h4>
        <p className='mx-auto text-center w-50'>No matter the time of year, nothing evokes the sweet sensations of summer like a thick slice of ripe, juicy, colourful fruits. </p>
     <div className="row max-width ">
