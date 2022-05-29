@@ -38,9 +38,22 @@ const Navbar = () => {
         <li className="nav-item">
           <Link to="/uploadproduct" className="navlink" aria-current="page" >Upload Products</Link>
         </li>
+        <li className="nav-item">
+          <Link to="/manageProducts" className="navlink" aria-current="page" >Manage Products</Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/uploadproduct" className="navlink" aria-current="page" >Upload Products</Link>
+        </li>
       </ul>
       <span className="nav-item">
-                  { user? <button onClick={logout} className="btn signOut fw-bold ">SignOut</button> : <Link
+                  {/* { user? <button onClick={logout} className="btn signOut fw-bold ">SignOut</button> : <Link
+                              className="login  fw-bold"
+                  to="/login"
+                >
+                  Login
+                </Link>} */}
+                {user && <button onClick={logout} className="btn signOut fw-bold ">SignOut</button>}
+                {!user &&  <Link
                               className="login  fw-bold"
                   to="/login"
                 >

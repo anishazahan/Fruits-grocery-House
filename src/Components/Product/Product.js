@@ -10,7 +10,7 @@ const Product = () => {
     .then(res => res.json())
     .then(data => setProducts(data));
 }, [])
-console.log(products);
+
 
   return (
     <div id="products" className='container mx-auto mb-5'>
@@ -23,6 +23,8 @@ console.log(products);
             products.map(singleProduct => <SingleProduct key={singleProduct.id} singleProduct={singleProduct}></SingleProduct>)
         }
         </div>
+
+
         
     </div>
   )

@@ -15,7 +15,7 @@ const SingleProduct = ({singleProduct}) => {
        
             <div className="d-flex flex-row justify-content-between">
             <h6 className='mr-5'>Price: <span className='price py-3'>{quantity}$</span>{unit}</h6>
-                <Link to={`/purchase/${_id}`} className='updateBtn ml-5'>Buy Now</Link>
+                <Link to={`/purchase/${_id}`} className='updateBtn ml-5'>Update</Link>
             </div>
         </div>
     </div>
