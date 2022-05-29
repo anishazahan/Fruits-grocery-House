@@ -14,6 +14,7 @@ import UploadProduct from './Components/UploadProduct/UploadProduct';
 import ManageProducts from './Components/ManageProducts/ManageProducts';
 import MyItems from './Components/ManageProducts/MyItems';
 import About from './Components/Home/About';
+import NotFound from './Components/NotFound/NotFound';
 
 
 function App() {
@@ -31,7 +32,9 @@ function App() {
         <Route path="/uploadproduct" element={<RequireAuth><UploadProduct/></RequireAuth>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/signUp" element={<SignUP/>} />
+        <Route path="/*" element={<NotFound/>} />
      </Routes>
+
      <Footer></Footer>
      
       
