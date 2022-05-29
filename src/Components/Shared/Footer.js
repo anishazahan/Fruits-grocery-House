@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import './Footer.css'
-// import { FaFacebookSquar } from "react-icons/fa";
+import { FaFacebookSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="container text-color d-flex flex-row justify-content-around">
             <h4>Follow Us</h4>
             <div className="d-flex flex-row">
-                {/* <FaFacebookSquar></FaFacebookSquar> */}
+                <FaFacebookSquare></FaFacebookSquare>
             </div>
             <div className=" d-flex flex-column">
                 <Link className='footer-link' to="/">Contact Us</Link>

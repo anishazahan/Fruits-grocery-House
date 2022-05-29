@@ -8,7 +8,7 @@ const Update = () => {
     const [product,setProducts]= useState({});
     
     useEffect( ()=>{
-      fetch(`http://localhost:5000/product/${id}`)
+      fetch(`https://young-refuge-85297.herokuapp.com/product/${id}`)
       .then(res => res.json())
       .then(data => setProducts(data));
   }, [product,id])
@@ -16,7 +16,7 @@ const Update = () => {
 
   const deliver = () => {
     const newQuantity = parseInt(product.quantity) - 1;
-    fetch(`http://localhost:5000/product/${id}`,{
+    fetch(`https://young-refuge-85297.herokuapp.com/product/${id}`,{
       method:'PUT',
       headers:{
         "content-type":"application/json"
@@ -31,7 +31,7 @@ const Update = () => {
     e.preventDefault();
     let restockValue = e.target.name.value;
     const newQuantity = parseInt(restockValue) + parseInt(product.quantity);
-    fetch(`http://localhost:5000/product/${id}`,{
+    fetch(`https://young-refuge-85297.herokuapp.com/product/${id}`,{
       method:'PUT',
       headers:{
         "content-type":"application/json"

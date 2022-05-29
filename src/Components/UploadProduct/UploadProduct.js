@@ -21,7 +21,7 @@ const UploadProduct = () => {
   const product = {name,supplier,price,unit,quantity,QuantityUnit,img,description,category,email};
   console.log(product);
 
-  fetch ('http://localhost:5000/product',{
+  fetch ('https://young-refuge-85297.herokuapp.com/product',{
     method:"POST",
     headers:{
       "content-type":"application/json"

@@ -10,7 +10,7 @@ const MyItems = () => {
     const [products,setProducts]= useState([]);
     
     useEffect( ()=>{
-      fetch(`http://localhost:5000/product?email=${user.email}`)
+      fetch(`https://young-refuge-85297.herokuapp.com/product?email=${user.email}`)
       .then(res => res.json())
       .then(data => setProducts(data));
   }, [ products,user.email])
@@ -18,7 +18,7 @@ const MyItems = () => {
 
   const handleDelete= (id) => {
     console.log(id);
-  fetch(`http://localhost:5000/product/${id}`, {
+  fetch(`https://young-refuge-85297.herokuapp.com/product/${id}`, {
       method: "DELETE",
       headers: {
         "content-type": "application/json",
