@@ -10,6 +10,8 @@ import './Login.css'
 
 const Login = () => {
 
+
+
     const [signInWithGoogle, googleuser, googleloading, googleError] = useSignInWithGoogle(auth);
     const {
       register,
@@ -37,14 +39,36 @@ const Login = () => {
       return <button className="spinner mt-5 fw-normal">Loading...</button>
     }
   
-    if ( user || googleuser) {
-      navigate(from , { replace: true });
-    }
+    // if ( user || googleuser) {
+    //   navigate(from , { replace: true });
+    // }
   
     const onSubmit = (data) => {
       console.log(data);
       signInWithEmailAndPassword(data.email,data.password);
     };
+
+
+
+     if (user) {
+    const url = "https://young-refuge-85297.herokuapp.com/login";
+    fetch(url, {
+      method: "POST",
+      body: JSON.stringify({
+        email: user.email
+      }),
+      headers: {
+        "Content-type": "application/json",
+      },
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        localStorage.setItem('accessToken', data.token)
+       
+        navigate(from,{replace: true})
+      });
+  }
+
   
   return (
     

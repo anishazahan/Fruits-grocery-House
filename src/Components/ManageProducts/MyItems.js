@@ -11,11 +11,13 @@ const MyItems = () => {
     const [products,setProducts]= useState([]);
     
     useEffect( ()=>{
-      fetch(`https://young-refuge-85297.herokuapp.com/product?email=${user.email}`)
+      fetch(`https://young-refuge-85297.herokuapp.com/product?email=${user.email}`,{
+          headers:{authorization:`${localStorage.getItem("accessToken")}`}
+      })
       .then(res => res.json())
       .then(data => setProducts(data));
   }, [ products,user.email])
-  console.log(user.email);
+  
 
 
   const handleDelete= (id) => {
