@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import SingleProduct from './SingleProduct';
 import './products.css'
+import { Link } from 'react-router-dom';
 
 const Product = () => {
 
@@ -23,6 +24,11 @@ const Product = () => {
             products.map(singleProduct => <SingleProduct key={singleProduct.id} singleProduct={singleProduct}></SingleProduct>)
         }
         </div>
+
+
+       <div className="text-center my-5">
+       <Link className='manage' to="/manageProduct"> Manage Products</Link>
+       </div>
 
 
         

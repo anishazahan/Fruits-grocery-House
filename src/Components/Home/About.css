@@ -1,0 +1,32 @@
+.about-margin{
+    margin: 10% 0;
+    background-color: rgb(187, 244, 187);
+    padding: 5% 0;
+    padding-bottom: 5%;
+}
+.about-heading{
+    color: #125C13;
+    font-weight: bold;
+    margin-bottom: 5%;
+   
+}
+.heading{
+    color: #125C13;
+    font-weight: 700;
+    font-size: 22px;
+
+}
+.explore-btn{
+    background: #064207;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+   
+}
+.explore-btn:hover{
+    color: aqua;
+    background: #064207df;
+}

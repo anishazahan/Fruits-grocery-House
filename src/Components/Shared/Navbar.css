@@ -20,4 +20,17 @@
 }
 .signOut{
     color: #F0D290;
+    border: 2px solid #F0D290;
+}
+.profile{
+    background-color: #F0D290;
+    border: 1px solid #F0D290;
+    font-weight: bold;
+    padding: 10px 15px;
+    color: #125C13;
+    margin: 5px;
+    border-radius: 5px;
+}
+.profile-list{
+    color: #125C13;
 }

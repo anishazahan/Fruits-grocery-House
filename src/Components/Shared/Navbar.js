@@ -35,11 +35,9 @@ const Navbar = () => {
         <li className="nav-item">
           <Link to="/product" className="navlink" aria-current="page">Products</Link>
         </li>
+       
         <li className="nav-item">
-          <Link to="/uploadproduct" className="navlink" aria-current="page" >Upload Products</Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/manageProduct" className="navlink" aria-current="page" >Manage Products</Link>
+          <Link to="/about" className="navlink" aria-current="page" >About Us</Link>
         </li>
         
       </ul>
@@ -48,15 +46,15 @@ const Navbar = () => {
      
 
                 {user &&  <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <button class="profile dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             { user?.displayName || "USER"}
           </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-          <Link to="/manageProduct" className="navlink" aria-current="page" >Manage Products</Link>
-          <Link to="/uploadproduct" className="navlink" aria-current="page" >Upload Products</Link>
-          <Link to="/myitems" className="navlink" aria-current="page" >My Items</Link>
-            <Link to="/" class="dropdown-item">Something else here</Link>
-            <button onClick={logout} className="btn signOut fw-bold ">SignOut</button>
+          <div class="dropdown-menu p-3 px-4 d-flex flex-column" aria-labelledby="dropdownMenuButton">
+          <Link to="/manageProduct" className="navlink profile-list mr-3" aria-current="page" >ManageProducts</Link>
+          <Link to="/uploadproduct" className="navlink profile-list py-2" aria-current="page" >UploadProducts</Link>
+          <Link to="/myitems" className="navlink profile-list " aria-current="page" >MyItems</Link>
+          
+            <button onClick={logout} className="btn signOut fw-bold mr-3 ">SignOut</button>
           </div>
         </div> }
                 {!user &&  <Link
