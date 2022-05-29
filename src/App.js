@@ -12,6 +12,7 @@ import Footer from './Components/Shared/Footer';
 import Navbar from './Components/Shared/Navbar';
 import UploadProduct from './Components/UploadProduct/UploadProduct';
 import ManageProducts from './Components/ManageProducts/ManageProducts';
+import MyItems from './Components/ManageProducts/MyItems';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/product" element={<Product/>} />
         <Route path="/purchase/:id" element={<RequireAuth><Update/></RequireAuth>} />
+        <Route path="/myitems" element={<RequireAuth><MyItems/></RequireAuth>} />
         <Route path="/manageProduct" element={<RequireAuth><ManageProducts/></RequireAuth>} />
         <Route path="/uploadproduct" element={<RequireAuth><UploadProduct/></RequireAuth>} />
         <Route path="/login" element={<Login/>} />

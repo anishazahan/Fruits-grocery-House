@@ -1,37 +1,45 @@
 import React, { useEffect, useState } from 'react'
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
 
-const ManageProducts = () => {
 
 
+const MyItems = () => {
+
+    const [user,loading]=useAuthState(auth);
     const [products,setProducts]= useState([]);
+    
     useEffect( ()=>{
-      fetch('http://localhost:5000/product')
+      fetch(`http://localhost:5000/product?email=${user.email}`)
       .then(res => res.json())
       .then(data => setProducts(data));
-  }, [products])
+  }, [ products,user.email])
 
- 
+
   const handleDelete= (id) => {
-      console.log(id);
-    fetch(`http://localhost:5000/product/${id}`, {
-        method: "DELETE",
-        headers: {
-          "content-type": "application/json",
-        },
-      })
-        .then((res) => res.json())
-        .then((data) => {
-           
-            
-  });
-  
-  }
+    console.log(id);
+  fetch(`http://localhost:5000/product/${id}`, {
+      method: "DELETE",
+      headers: {
+        "content-type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((data) => {
+         
+          
+});
+
+}
+        if(loading){
+            return <p className='text-center my-5'>Loading</p>
+        }
+
 
 
   return (
-
-        <div className=" w-50 mx-auto table-responsive my-5">
-            <h3 className='text-center'>Manage Products</h3>
+    <div className=" w-50 mx-auto table-responsive my-5">
+            <h3 className='text-center'>My Items</h3>
             <table class="table ">
   <thead>
     <tr>
@@ -59,4 +67,4 @@ const ManageProducts = () => {
   )
 }
 
-export default ManageProducts
+export default MyItems

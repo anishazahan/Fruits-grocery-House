@@ -10,6 +10,7 @@ const UploadProduct = () => {
   e.preventDefault();
   const name = e.target.name.value;
   const supplier = e.target.supplier.value;
+  const email = e.target.email.value;
   const price = e.target.price.value;
   const unit = e.target.unit.value;
   const quantity = e.target.quantity.value;
@@ -17,7 +18,7 @@ const UploadProduct = () => {
   const img = e.target.img.value;
   const description = e.target.description.value;
   const category = e.target.category.value;
-  const product = {name,supplier,price,unit,quantity,QuantityUnit,img,description,category};
+  const product = {name,supplier,price,unit,quantity,QuantityUnit,img,description,category,email};
   console.log(product);
 
   fetch ('http://localhost:5000/product',{
@@ -55,6 +56,11 @@ const UploadProduct = () => {
   <div className="form-outline mb-4">
   <label className="form-label" htmlFor="form4Example2">Supplier</label>
     <input type="text" id="form4Example2" name='supplier' className="form-control" />
+   
+  </div>
+  <div className="form-outline mb-4">
+  <label className="form-label" htmlFor="form4Example2">Email</label>
+    <input type="email" id="form4Example2" name='email' className="form-control" />
    
   </div>
   <div className="form-outline mb-4">
