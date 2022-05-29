@@ -39,7 +39,7 @@ const Navbar = () => {
           <Link to="/uploadproduct" className="navlink" aria-current="page" >Upload Products</Link>
         </li>
         <li className="nav-item">
-          <Link to="/manageProducts" className="navlink" aria-current="page" >Manage Products</Link>
+          <Link to="/manageProduct" className="navlink" aria-current="page" >Manage Products</Link>
         </li>
         <li className="nav-item">
           <Link to="/uploadproduct" className="navlink" aria-current="page" >Upload Products</Link>
