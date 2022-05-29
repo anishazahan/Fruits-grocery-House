@@ -42,19 +42,22 @@ const Navbar = () => {
         
       </ul>
       <span className="nav-item">
-                 
-     
-
+                
                 {user &&  <div class="dropdown">
           <button class="profile dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             { user?.displayName || "USER"}
           </button>
-          <div class="dropdown-menu p-3 px-4 d-flex flex-column" aria-labelledby="dropdownMenuButton">
-          <Link to="/manageProduct" className="navlink profile-list mr-3" aria-current="page" >ManageProducts</Link>
-          <Link to="/uploadproduct" className="navlink profile-list py-2" aria-current="page" >UploadProducts</Link>
-          <Link to="/myitems" className="navlink profile-list " aria-current="page" >MyItems</Link>
+          <div class="dropdown-menu p-3 px-4" aria-labelledby="dropdownMenuButton">
+         <ul className='text-decoration-none'>
+           <li> <Link to="/manageProduct" className="navlink profile-list" aria-current="page" >ManageProducts</Link></li>
+          <li>
+          <Link to="/uploadproduct" className="navlink profile-list" aria-current="page" >UploadProducts</Link>
+          </li>
+          <li><Link to="/myitems" className="navlink profile-list " aria-current="page" >MyItems</Link></li>
+          <li><button onClick={logout} className="btn signOut fw-bold mr-3 ">SignOut</button></li>
+         </ul>
           
-            <button onClick={logout} className="btn signOut fw-bold mr-3 ">SignOut</button>
+            
           </div>
         </div> }
                 {!user &&  <Link

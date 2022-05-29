@@ -15,6 +15,7 @@ const MyItems = () => {
       .then(res => res.json())
       .then(data => setProducts(data));
   }, [ products,user.email])
+  console.log(user.email);
 
 
   const handleDelete= (id) => {
@@ -28,7 +29,7 @@ const MyItems = () => {
       .then((res) => res.json())
       .then((data) => {
          
-          
+        
 });
 
 }
