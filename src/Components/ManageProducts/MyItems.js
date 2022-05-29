@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import "./Myitem.css"
 
 
 
@@ -38,8 +39,8 @@ const MyItems = () => {
 
 
   return (
-    <div className=" w-50 mx-auto table-responsive my-5">
-            <h3 className='text-center'>My Items</h3>
+    <div className=" w-50 mx-auto table-responsive my-5 mb-5">
+            <h3 className='text-center my-5'>My Items</h3>
             <table class="table ">
   <thead>
     <tr>
@@ -56,7 +57,7 @@ const MyItems = () => {
       <td>{product.price}$</td>
       <td>{product.quantity}</td>
       <td>{product.supplier}</td>
-      <td> <button onClick={()=> handleDelete(product._id)}>Delete</button></td>
+      <td> <button className='delete-btn' onClick={()=> handleDelete(product._id)}>Delete</button></td>
   </tr>)}
 
   

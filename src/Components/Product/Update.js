@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
+import "./update.css"
 
 const Update = () => {
 
@@ -47,43 +48,28 @@ const Update = () => {
 
     
   return (
-    <main className="min-h-[75vh] text-center">
-    <h2 className="my-5">
+    <main className="mb-5">
+    <h2 className="my-5 text-center update-heading">
       Product Details
     </h2>
-      <div className="w-full flex items-center justify-center space-x-2 flex-col md:flex-row">
-        <div className=" w-full max-w-lg">
-          <img className="max-w-xs mx-auto" src={product.img} alt="" />
+    <div className="container">
+      <div className="row">
+        <div className=" col-lg-6">
+          <img className="mx-auto rounded img-fluid" src={product.img} alt="" />
         </div>
-        <div className="w-full max-w-lg text-center border px-4 sm:px-12 space-y-4 h-fit py-4 my-4">
-          <div className="w-full flex justify-between ">
-            <h2 className="text-md text-gray-500">Product:</h2>
-            <h2 className="text-lg font-medium">{product.name}</h2>
-          </div>
-          <div className="w-full flex justify-between ">
-            <h2 className="text-md text-gray-500">ID:</h2>
-            <h2 className="text-sm font-medium">{product._id}</h2>
-          </div>
-          <div className="w-full flex justify-between ">
-            <h2 className="text-md text-gray-500">Quantity:</h2>
-            <h2 className="text-lg font-medium">{product.quantity == 0 ? 'sold-out' : product.quantity}</h2>
-          </div>
-          <div className="w-full flex justify-between ">
-            <h2 className="text-md text-gray-500">Price:</h2>
-            <h2 className="text-lg font-medium">${product.price}</h2>
-          </div>
-          <div className="w-full flex justify-between ">
-            <h2 className="text-md text-gray-500">Supplier:</h2>
-            <h2 className="text-lg font-medium">{product.supplier}</h2>
-          </div>
-         
+        <div className="col-lg-6 text-left">
+          
+            <h6 className="my-3">Product:{product.name}</h6>
+            <h6 className="">ID:{product._id}</h6>
+            <h6 className="">Price:{product.price}$</h6>
+            <h6 className="">Quantity:{product.quantity == 0 ? 'sold-out' : product.quantity}</h6>
+            <h6 className="">Supplier:{product.supplier}</h6>
+            <p className="text-justify">Description:{product.description}</p>
+
           <div className="">
-            <p className="text-justify">{product.description}</p>
-          </div>
-          <div className="flex flex-wrap space-x-4 space-y-4 justify-center items-center">
             <form
               onSubmit={restock}
-              className=" border h-12 relative"
+              className=""
             >
               <input
                 className="h-full text-center "
@@ -93,23 +79,22 @@ const Update = () => {
               />
               <button
                 type="submit"
-                className="bg-indigo-500 px-4 py-2 h-full text-white rounded font-medium"
+                className="fw-bold btn btn-success restock"
               >
                 Restock
               </button>
             </form>
             <button
               onClick={deliver}
-              className=" bg-green-500 h-12 px-4 text-white rounded font-medium mt-6 md:mt-0"
+              className="btn btn-success"
             >
               delivered
             </button>
           </div>
+          </div>
         </div>
       </div>
-      <Link className="block max-w-fit mx-auto px-12 py-3 my-8 text-sm font-medium text-white bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  rounded shadow sm:w-auto focus:outline-none focus:ring" to="/product">
-           <button>Manage Products</button>
-          </Link>
+     
   </main>
   )
 }

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import './Myitem.css'
 
 const ManageProducts = () => {
 
@@ -48,7 +49,7 @@ const ManageProducts = () => {
       <td>{product.price}$</td>
       <td>{product.quantity}</td>
       <td>{product.supplier}</td>
-      <td> <button onClick={()=> handleDelete(product._id)}>Delete</button></td>
+      <td> <button className='delete-btn' onClick={()=> handleDelete(product._id)}>Delete</button></td>
   </tr>)}
 
   
