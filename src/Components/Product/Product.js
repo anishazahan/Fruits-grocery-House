@@ -6,10 +6,11 @@ const Product = () => {
 
   const [products,setProducts]= useState([]);
   useEffect( ()=>{
-    fetch('product.json')
+    fetch('http://localhost:5000/product')
     .then(res => res.json())
     .then(data => setProducts(data));
 }, [])
+console.log(products);
 
   return (
     <div id="products" className='container mx-auto mb-5'>

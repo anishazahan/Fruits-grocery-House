@@ -6,6 +6,7 @@ import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
 import RequireAuth from './Components/Login/RequireAuth';
 import SignUP from './Components/Login/SignUP';
+import Update from './Components/Product/Update';
 import Product from './Components/Product/Product';
 import Footer from './Components/Shared/Footer';
 import Navbar from './Components/Shared/Navbar';
@@ -20,6 +21,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/product" element={<Product/>} />
+        <Route path="/purchase/:id" element={<Update/>} />
         <Route path="/uploadproduct" element={<RequireAuth><UploadProduct/></RequireAuth>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/signUp" element={<SignUP/>} />

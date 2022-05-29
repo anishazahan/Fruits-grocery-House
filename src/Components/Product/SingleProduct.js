@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom';
 import './products.css'
 
 const SingleProduct = ({singleProduct}) => {
-    const {img,name,supplier,price,description,unit,QuantityUnit,quantity,} = singleProduct;
+    const {img,name,supplier,price,description,unit,QuantityUnit,quantity,_id} = singleProduct;
+    console.log(_id);
   return (
     <div className='col-md-2 col-lg-4 shadow mt-5'>
         <img className='images rounded' src={img} alt="" />
@@ -14,7 +15,7 @@ const SingleProduct = ({singleProduct}) => {
        
             <div className="d-flex flex-row justify-content-between">
             <h6 className='mr-5'>Price: <span className='price py-3'>{quantity}$</span>{unit}</h6>
-                <Link to="/" className='updateBtn ml-5'>Update</Link>
+                <Link to={`/purchase/${_id}`} className='updateBtn ml-5'>Buy Now</Link>
             </div>
         </div>
     </div>
